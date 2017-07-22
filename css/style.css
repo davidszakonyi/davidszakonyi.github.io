@@ -63,7 +63,7 @@ TEXT SELECTION STYLES
  color:#fff;
 }
 a {
-	color: #E095B4;
+	color: #454544;
 	outline: none;
 }
 /******************************************************************
@@ -83,47 +83,49 @@ p {
 	font-size: 8pt;
 }
 h1 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 22pt;
 }
 h2 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 18pt;
 }
 h3 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 16pt;
 }
 h4 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 14pt;
 }
 h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 12pt;
 }
 h6 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
 	font-size: 10pt;
+	font-style: normal|italic
 }
+em { font-style: italic; }
 /***************************************************
 COLUMNS and FEATURES
 ***************************************************/
@@ -187,7 +189,7 @@ blockquote {
 	margin-left:20px;
 	margin-top: 60px;
 	margin-bottom: 60px;
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	color:#333;
 	text-align: center;
 	background-image: url(../images/blockquote.png);
@@ -209,7 +211,7 @@ blockquote {
 	padding-bottom: 60px;
 }
 .styled-list-dot li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 14px;
@@ -224,7 +226,7 @@ blockquote {
 	padding-bottom: 60px;
 }
 .styled-list-star li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 14px;
@@ -238,8 +240,9 @@ blockquote {
 .styled-list-star {
 	padding-bottom: 60px;
 }
+.tab { margin-left: 40px; }
 .readmore {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	font-size: 11px;
 	text-decoration: none;
 	color: #E095B4;
@@ -327,7 +330,7 @@ Header & Menu CSS
 	color: #d8d8d8;
 }
 #header-text a {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	color: #d8d8d8;
 	text-decoration: none;
 	font-size: 7pt;
@@ -336,7 +339,7 @@ Header & Menu CSS
 	width: 96px;
 	height: 22px;
 	position: fixed;
-	bottom: 40px;
+	bottom: 190px;
 	left: 30px;
 }
 #social-box li {
@@ -354,18 +357,34 @@ Header & Menu CSS
 	position: fixed;
 	padding-top: 60px;
 	padding-left: 40px;
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
 #main-menu a {
 	color: #707070;
 	text-decoration: none;
-	font-size: 14pt;
+	font-size: 13pt;
 }
+
+#contactinfo {
+	position: fixed;
+	padding-top: 180px;
+	padding-left: 40px;
+	bottom: 150px;
+
+	font-family: 'Lato', Verdana, Arial, sans-serif;
+}
+#contactinfo a {
+	color: #707070;
+	text-decoration: none;
+	font-size: 13pt;
+}
+
+
 #main-menu a:hover {
 	color: #121212;
 }
 #main-menu li {
-	padding: 5px 0 5px 0;
+	padding: 10px 0 5px 0;
 }
 #main-menu .selected {
 	color: #121212;
@@ -376,36 +395,46 @@ Header & Menu CSS
 	bottom: 10px;
 	left: 20px;
 }
-.facebook a {
-	background-image: url(../images/facebook.png);
-	background-position: 0 0px;
-	display: block;
-	height: 22px;
-	padding-left: 24px;
-	background-repeat: no-repeat
-}
-.facebook a:hover {
-	background-position: 0 -26px;
-	color: #444444;
-}
+
 .twitter a {
-	background-image: url(../images/twitter.png);
+	background-image: url(../images/Twitter_new.png);
 	background-position: 0 0px;
 	display: block;
 	height: 22px;
-	padding-left: 24px;
+	width: 22px;
+	background-size: 22px;	
+	padding-left: 0px;
 	background-repeat: no-repeat
 }
-.twitter a:hover {
-	background-position: 0 -26px;
-	color: #444444;
+
+.linkedin a {
+	background-image: url(../images/Linkedin.png);
+	background-position: 0 0px;
+	display: block;
+	height: 22px;
+	width: 22px;
+	background-size: 22px;	
+	padding-left: -20px;
+	background-repeat: no-repeat
 }
+
+.scholar a {
+	background-image: url(../images/icon-scholar.png);
+	background-position: 0 0px;
+	display: block;
+	height: 22px;
+	width: 22px;
+	background-size: 22px;	
+	padding-left: 0px;
+	background-repeat: no-repeat
+}
+
 .rss a {
 	background-image: url(../images/rss.png);
 	background-position: 0 0px;
 	display: block;
 	height: 22px;
-	padding-left: 24px;
+	padding-left: 4px;
 	background-repeat: no-repeat
 }
 .rss a:hover {
@@ -621,7 +650,7 @@ About us CSS
 	text-align: justify;
 }
 .team-text {
-	text-align: center;
+	text-align: left;
 }
 /******************************************************************
 Portfolio CSS
@@ -651,7 +680,7 @@ Portfolio CSS
 	right: -78px;
 }
 #filter a {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	font-size: 16px;
 	color: #666;
 	display: inline-block;
@@ -731,10 +760,10 @@ This CSS is for the project page
 	padding-left: 40px;
 }
 #work h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
 #work li {
-	font-family: 'Droid Sans', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	text-decoration: none;
 	font-size: 9pt;
@@ -753,7 +782,7 @@ This CSS is for the project page
 	text-align: left;
 }
 .project-summary h5 {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
 /******************************************************************
 Blog CSS
@@ -911,7 +940,7 @@ Blog CSS
 	width: 40px;
 }
 .post-author {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
@@ -927,7 +956,7 @@ Blog CSS
 	padding-top: 15px;
 }
 .reply {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	line-height: 1.6em;
 	color: #454544;
 	text-decoration: none;
@@ -1043,7 +1072,7 @@ This is the buttons and inputs CSS
 ******************************************************************/
 
 .button {
-	font-family: 'Droid Serif', Verdana, Arial, sans-serif;
+	font-family: 'Lato', Verdana, Arial, sans-serif;
 	font-size:12px;
 	text-align:center;
 	text-decoration:none;
