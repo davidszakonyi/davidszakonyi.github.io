@@ -76,6 +76,29 @@ General CSS
 	margin-left: 240px;
 	z-index: 1;
 }
+#photos {
+	width: 560px;
+	padding-top: -170px;
+	margin-left: 320px;
+	z-index: 1;
+}
+
+img {
+  /* Responsive images (ensure images don't scale beyond their parents) */
+
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
 p {
 	font-family: Verdana, Arial, sans-serif;
 	line-height: 1.6em;
@@ -359,6 +382,7 @@ Header & Menu CSS
 	padding-left: 40px;
 	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
+
 #main-menu a {
 	color: #707070;
 	text-decoration: none;
@@ -1202,3 +1226,11 @@ This is the CSS for the social links
 	background-position: 0 -17px;
 	color: #444444;
 }
+
+
+@media print {
+  * {
+   
+  a[href^="#"]:after {
+    content: "";
+  }}}
