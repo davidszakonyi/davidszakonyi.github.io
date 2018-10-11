@@ -1088,7 +1088,11 @@ Contact CSS
 }
 #contactinfo {
 	padding-right: 10px;
+<<<<<<< HEAD
 	padding-top: 160px;
+=======
+	padding-top: 150px;
+>>>>>>> 89ca6e2d913212ee0c264a1ebfe428d82786a049
 	float: right;
 }
 /******************************************************************
