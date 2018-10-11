@@ -362,7 +362,7 @@ Header & Menu CSS
 	width: 96px;
 	height: 22px;
 	position: fixed;
-	bottom: 180px;
+	bottom: 120px;
 	left: 30px;
 }
 #social-box li {
@@ -393,7 +393,7 @@ Header & Menu CSS
 	position: fixed;
 	padding-top: 180px;
 	padding-left: 40px;
-	bottom: 140px;
+	bottom: 80px;
 
 	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
