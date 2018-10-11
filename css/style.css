@@ -391,9 +391,9 @@ Header & Menu CSS
 
 #contactinfo {
 	position: fixed;
-	padding-top: 180px;
+	padding-top: 360px;
 	padding-left: 40px;
-	bottom: 100px;
+	bottom: 20px;
 
 	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
@@ -1088,7 +1088,7 @@ Contact CSS
 }
 #contactinfo {
 	padding-right: 10px;
-	padding-top: 80px;
+	padding-top: 160px;
 	float: right;
 }
 /******************************************************************
