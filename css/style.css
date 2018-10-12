@@ -391,7 +391,7 @@ Header & Menu CSS
 
 #contactinfo {
 	position: fixed;
-	padding-top: 180px;
+	padding-top: 60px;
 	padding-left: 40px;
 	bottom: 80px;
 
@@ -1088,11 +1088,7 @@ Contact CSS
 }
 #contactinfo {
 	padding-right: 10px;
-<<<<<<< HEAD
-	padding-top: 160px;
-=======
-	padding-top: 150px;
->>>>>>> 89ca6e2d913212ee0c264a1ebfe428d82786a049
+	padding-top: 80px;
 	float: right;
 }
 /******************************************************************
