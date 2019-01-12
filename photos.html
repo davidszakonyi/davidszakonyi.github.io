@@ -74,19 +74,24 @@
 
     #slides .slidesjs-navigation {
       margin-top:25px;
+
     }
 
 
     #slides .slidesjs-previous {
       margin-right: 5px;
       float: center;
+            position: relative;
+top: -790px;    
+z-index: 10;
     }
 
     #slides .slidesjs-next {
       margin-right: -5px;
       float: center;
-      
-top: 42%;	
+            position: relative;
+top: -790px;    
+z-index: 10;
     }
 
 
@@ -96,11 +101,15 @@ top: 42%;
       margin: 6px 0 0;
       float: right;
       list-style: none;
+      position: relative;
+top: -790px;    
+z-index: 10;
     }
 
     .slidesjs-pagination li {
       float: left;
       margin: 0 1px;
+      
     }
 
     .slidesjs-pagination li a {
@@ -178,7 +187,7 @@ a.1{text-decoration:none}
 
 .text2 {
     position: absolute; 
-    top: 100%;
+    top: 50%;
     left: 1%;
     width: 40%;
     z-index: 2;
@@ -277,37 +286,65 @@ a.1{text-decoration:none}
     <div id="slides">
     <div>
       <img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/img/Anadyr_Thumbnail.jpg" alt=""><span id="first" class="text2">Anadyr, Chukotka<br>Satellite: KH-9; July 4, 1975  </span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Anadyr.png" alt="">
+
       </div>
 
           <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Petropavlovsk_Thumbnail.jpg" alt=""><span id="first" class="text2">Petropavlovsk, Kamchatka <br>Satellite: KH-4; April 18, 1962</span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Petro.png" alt="">
+
+
+
       </div>
       
                                               <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Providenye_Thumbnail.jpg" alt=""><span id="first" class="text2">Providenye, Chukotka<br>Satellite: KH-7; April 30, 1965  </span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Prov.png" alt="">
+
+    
+    
       </div>
                                                           <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Vladimirovka_Thumbnail.jpg" alt=""><span id="first" class="text2">Vladimirovka, Astrakhan<br>Satellite: KH-9; April 30, 1979  </span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Vladimirovka.png" alt="">
+
+      
       </div>
 
                                                     <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Tiksi_Thumbnail.jpg" alt=""><span id="first" class="text2">Tiksi, Sakha<br>Satellite: KH-9; July 17, 1975  </span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Tiksi.png" alt="">
+
+     
       </div>
     
                    <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Mys_Thumbnail.jpg" alt=""><span id="first" class="text2">Mys Shmidta, Chukotka<br>Satellite: KH-9; July 4, 1975</span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Mys.png" alt="">
+
+      
       </div>
                             <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Mineralynye%20Vody_Thumbnail.jpg" alt=""><span id="first" class="text2">Mineralynye Vody, Stavropolsky Krai<br>Satellite: KH-4B; September 20, 1971</span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Min.png" alt="">
+
+     
       </div>
       
 
                 <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Saki_Thumbnail.jpg" alt=""><span id="first" class="text2">Saki, Crimea<br>Satellite: KH-9; June 21, 1975</span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Saki.png" alt="">
+
+      
       </div>
       
                                         <div>
       <img src="https://github.com/davidszakonyi/davidszakonyi.github.io/raw/master/img/Spassk_Thumbnail.jpg" alt=""><span id="first" class="text2">Spassk-Dalny, Primorsky Krai<br>Satellite: KH-4; September 29, 1962  </span>
+<br /><br /><br /><br /><br /><br /><img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/MapSlides/Spas.png" alt="">
+
+     
       </div>
       
       <a href="#" class="slidesjs-previous slidesjs-navigation" style="text-decoration: none"><i class="icon-chevron-left icon-small"></i></a>
@@ -337,7 +374,7 @@ a.1{text-decoration:none}
   <script>
     $(function() {
       $('#slides').slidesjs({
-        height: 875,
+        height: 2000,
          navigation: {
       active: false
     }
