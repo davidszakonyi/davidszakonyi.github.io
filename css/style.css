@@ -71,14 +71,15 @@ General CSS
 ******************************************************************/
 									
 #content {
-	width: 720px;
+	width: 850px;
 	padding-top: 170px;
 	margin-left: 240px;
+
 	z-index: 1;
 }
 #photos {
 	width: 560px;
-	padding-top: -170px;
+	padding-top: -110px;
 	margin-left: 320px;
 	z-index: 1;
 }
@@ -132,6 +133,7 @@ h4 {
 	color: #454544;
 	text-decoration: none;
 	font-size: 14pt;
+	
 }
 h5 {
 	font-family: 'Lato', Verdana, Arial, sans-serif;
@@ -139,6 +141,8 @@ h5 {
 	color: #454544;
 	text-decoration: none;
 	font-size: 12pt;
+		text-align: justify;
+
 }
 h6 {
 	font-family: 'Lato', Verdana, Arial, sans-serif;
@@ -146,6 +150,8 @@ h6 {
 	color: #454544;
 	text-decoration: none;
 	font-size: 10pt;
+			text-align: justify;
+
 	font-style: normal|italic
 }
 em { font-style: italic; }
@@ -326,7 +332,7 @@ Header & Menu CSS
 	position: fixed;
 	background-color: #FFF;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	top: 0px;
 	border-bottom: 1px;
 	border-bottom-style: solid;
@@ -343,7 +349,7 @@ Header & Menu CSS
 }
 #header-text {
 	width: 480px;
-	padding-top: 30px;
+	padding-top: 15px;
 	margin-left: 240px;
 	display: block;
 	height: 20px;
