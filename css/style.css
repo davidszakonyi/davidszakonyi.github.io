@@ -93,6 +93,20 @@ General CSS
 
 }
 
+@media (max-width: 540px) {
+    .view {
+        width: 500px;
+    }
+
+}
+
+/* For Tablets */
+@media (min-width: 780px) {
+    .view {
+        width: 700px;
+    }
+
+}
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
 
