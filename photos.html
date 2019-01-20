@@ -7,8 +7,7 @@
   <meta name="author" content="Nathan Searles">
 
   <!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
- <meta name="viewport" content="width=800" />
-  
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=yes"/>  
 <title>David Szakonyi - Satellites</title>
 <link rel="shortcut icon" href="favicon.ico" />
 <!-- Load CSS -->
@@ -161,28 +160,16 @@ a.1{text-decoration:none}
       margin: 0 auto
     }
 
-    /* For tablets & smart phones */
-    @media (max-width: 767px) {
-      body {
-        padding-left: 10px;
-        padding-right: 10px;
-      }
-      .container {
-        width: auto
-      }
-    }
-
     /* For smartphones */
-    @media (max-width: 480px) {
-      .container {
-        width: auto
-      }
+    @media (max-width: 540px) {
+
+
     }
 
     /* For smaller displays like laptops - increase the width of the photo using this */
     @media (min-width: 768px) and (max-width: 1800px) {
       .container {
-        width: 700px
+       width: auto;
       }
 
     }
@@ -203,11 +190,9 @@ a.1{text-decoration:none}
 </head>
 
 
-</html>
-
 <body>
 <!--This is the START of the header-->
-<div id="topcontrol" style="position: fixed; bottom: 5px; left: 700px; opacity: 1;" title="Go to Top"></div>
+<div id="topcontrol" style="position: fixed; bottom: 5px; left: 100px; opacity: 1;" title="Go to Top"></div>
 <div id="header-wrapper">
   <div id="header">
     <div id="header-text">

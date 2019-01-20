@@ -84,6 +84,17 @@ General CSS
 	z-index: 1;
 }
 
+
+/* For Tablets */
+@media (min-width: 540px) and (max-width: 780px) {
+    .view {
+        width: 600px;
+    }
+    body {
+        width: auto;
+    }
+}
+
 img {
   /* Responsive images (ensure images don't scale beyond their parents) */
 
@@ -381,7 +392,6 @@ Header & Menu CSS
 	height: 100%;
 	padding-top: 90px;
 	float: left;
-	width: 140px;
 }
 #main-menu {
 	position: fixed;
@@ -555,30 +565,11 @@ IMG Hovers
 	-webkit-box-shadow: 0px 0px 5px #999;
 	box-shadow: 0px 0px 5px #999;
 }
-.blog-item img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
-.blog-item-single img:hover {
-	-moz-box-shadow: 0px 0px 5px #999;
-	-webkit-box-shadow: 0px 0px 5px #999;
-	box-shadow: 0px 0px 5px #999;
-}
+
 /******************************************************************
 Home Page CSS
 ******************************************************************/
 
-#recent-posts-container {
-	width: 720px;
-	height: 200px;
-	margin-top: 60px;
-}
-#recent-projects-container {
-	width: 720px;
-	height: 200px;
-	margin-top: 60px;
-}
 .section-description {
 	float: left;
 	width: 110px;
@@ -729,37 +720,7 @@ Portfolio CSS
 #stage {
 	width: 720px;
 }
-#container {
-	display:block;
-	overflow:hidden;
-	width: 720px;
-	margin:0 auto;
-}
-#container li {
-	float: left;
-	height: 180px;
-	list-style: none outside none;
-	margin: 20px;
-	position: relative;
-	width: 200px;
-}
-#container li p {
-	margin-left: 0px;
-}
-#container li h6 {
-	padding-top: 5px;
-	font-weight: bold;
-	margin-left: 0px;
-}
-#container li a:hover {
-	color: #121212;
-}
-#container ul {
-	overflow:hidden;
-}
-#container ul.hidden {
-	display:none;
-}
+
 /******************************************************************
 This CSS is for the project page
 ******************************************************************/
@@ -815,51 +776,7 @@ This CSS is for the project page
 .project-summary h5 {
 	font-family: 'Lato', Verdana, Arial, sans-serif;
 }
-/******************************************************************
-Blog CSS
-******************************************************************/
 
-#blog {
-	display: block;
-	width: 720px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 100px;
-}
-.blog-item-info {
-	padding: 10px 0 15px 0;
-	height: 15px;
-	width: 400px;
-	float: right;
-}
-.blog-item {
-	clear: both;
-	width: 720px;
-	height: 270px;
-}
-.blog-item-content {
-	width: 400px;
-	margin-top: 0px;
-	margin-left: 15px;
-	margin-bottom: 50px;
-	float: right;
-}
-.blog-item img {
-	margin-bottom: 50px;
-	float: left;
-}
-.blog-item-content h5 {
-	font-weight: bold;
-}
-.blog-item-content p {
-	padding: 0px 5px 5px 0px;
-	text-align: justify;
-}
-#blog .readmore {
-	float: left;
-	padding-top: 20px;
-}
 .user {
 	background-image: url(../images/user.png);
 	background-position: 0 1px;
@@ -926,31 +843,7 @@ Blog CSS
 	color: #444444;
 	text-decoration: underline;
 }
-.blog-item-single-info {
-	padding: 5px 0 20px 0;
-	height: 15px;
-	width: 720px;
-}
-.blog-item-single {
-	clear: both;
-	width: 720px;
-	height: 270px;
-}
-.blog-item-single-content {
-	width: 720px;
-	margin-top: 10px;
-	margin-bottom: 50px;
-}
-.blog-item-single img {
-	margin-bottom: 10px;
-}
-.blog-item-single-content h5 {
-	font-weight: bold;
-}
-.blog-item-single-content p {
-	text-align: left;
-	padding-bottom: 20px;
-}
+
 .social-blog-buttons {
 	display: inline;
 	float: left;
@@ -1233,26 +1126,3 @@ This is the CSS for the social links
 	background-position: 0 -17px;
 	color: #444444;
 }
-
-
-@media print {
-  * {
-   
-  a[href^="#"]:after {
-    content: "";
-  }}}
-
-/* For tablets & smart phones */
-    @media (max-width: 767px) {
-      content {
-width: auto
-      }
-
-    }
-
-    /* For smartphones */
-    @media (max-width: 480px) {
-      content {
-width: auto
-      }
-    }
