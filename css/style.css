@@ -1241,3 +1241,18 @@ This is the CSS for the social links
   a[href^="#"]:after {
     content: "";
   }}}
+
+/* For tablets & smart phones */
+    @media (max-width: 767px) {
+      content {
+width: auto
+      }
+
+    }
+
+    /* For smartphones */
+    @media (max-width: 480px) {
+      content {
+width: auto
+      }
+    }
