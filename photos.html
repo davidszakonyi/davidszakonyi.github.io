@@ -100,13 +100,13 @@ z-index: 10;
 
     .slidesjs-pagination {
       margin: 6px 0 0;
-      float: left;
       list-style: none;
       position: absolute;
-top: 1300px;   
-right: 250px;  
-z-index: 10;
+     z-index: 99;
+     top: 1280px; 
     }
+
+
 
     .slidesjs-pagination li {
       float: left;
@@ -378,7 +378,7 @@ a.1{text-decoration:none}
   <script>
     $(function() {
       $('#slides').slidesjs({
-        height: 2000,
+        height: 2300,
          navigation: {
       active: false
     }
