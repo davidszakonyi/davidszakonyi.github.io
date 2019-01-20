@@ -162,17 +162,40 @@ a.1{text-decoration:none}
 
     /* For smartphones */
     @media (max-width: 540px) {
-	#page-wrapper {
+    .container {
+     width: 400px;
+     margin-left: 10px;
+    }
+	#content {
 	width: 400px;
 	}
+	#img {
+	width: 400px;
+	}
+    }
 
+    /* For smartphones */
+    @media (min-width: 540px) and (max-width: 768px) {
+    .container {
+     width: 500px;
+     margin-left: 10px;
+    }
+	#content {
+	width: 500px;
+	}
+	#img {
+	width: 500px;
+	}
     }
 
     /* For smaller displays like laptops - increase the width of the photo using this */
     @media (min-width: 768px) and (max-width: 1800px) {
-      .container {
-       width: auto;
-      }
+	#content {
+	width: 700px;
+	}
+	#img {
+	width: 700px;
+	}
 
     }
 

@@ -88,11 +88,9 @@ General CSS
 /* For Tablets */
 @media (min-width: 540px) and (max-width: 780px) {
     .view {
-        width: 600px;
+        width: 500px;
     }
-    body {
-        width: auto;
-    }
+
 }
 
 img {
@@ -720,7 +718,37 @@ Portfolio CSS
 #stage {
 	width: 720px;
 }
-
+#container {
+	display:block;
+	overflow:hidden;
+	width: 720px;
+	margin:0 auto;
+}
+#container li {
+	float: left;
+	height: 180px;
+	list-style: none outside none;
+	margin: 20px;
+	position: relative;
+	width: 200px;
+}
+#container li p {
+	margin-left: 0px;
+}
+#container li h6 {
+	padding-top: 5px;
+	font-weight: bold;
+	margin-left: 0px;
+}
+#container li a:hover {
+	color: #121212;
+}
+#container ul {
+	overflow:hidden;
+}
+#container ul.hidden {
+	display:none;
+}
 /******************************************************************
 This CSS is for the project page
 ******************************************************************/
