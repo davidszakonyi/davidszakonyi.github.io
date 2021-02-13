@@ -7,7 +7,6 @@ body {
   text-align: justify;}
 
 
-
 section {
   display: block;
   width: 80%;
@@ -26,11 +25,13 @@ section {
   color: #fff; }
 
 a {
+  font-weight: 700;
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease; }
   a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+     }
 .tab { margin-left: 40px; }
 .br2 {line-height: 60px; }
 .text-black {
