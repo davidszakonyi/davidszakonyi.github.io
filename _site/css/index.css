@@ -253,15 +253,16 @@ ul #navi li {
 
 @media screen and (max-width:1000px) {
     .card {
+    position:static;
         top:80vh;
         left:0;
         min-width:100vw;
         padding:0 30px;
-        margin-top:200px;
     }
     .logo {
     display: none;
   }
+  
 }
 
 .special-link {
