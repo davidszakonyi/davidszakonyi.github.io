@@ -12,6 +12,7 @@ body {
     font-family: Avenir,Open Sans,Helvetica,sans-serif;
     color:#1e1e1e;
     background-color:#fff;
+    
 }
 
 h2 {
@@ -256,7 +257,11 @@ ul #navi li {
         left:0;
         min-width:100vw;
         padding:0 30px;
+        margin-top:200px;
     }
+    .logo {
+    display: none;
+  }
 }
 
 .special-link {
