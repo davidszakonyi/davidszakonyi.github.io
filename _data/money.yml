@@ -1,0 +1,70 @@
+# template
+# if a line doesn't apply, comment it out
+
+# authors  : First M. Last, First M. Last ... & First M. Last
+#   title    : A title goes here: Only first words capitalized
+#   year     : 20##
+#   venue    : The name of the venue goes here
+#   pdf      : [PDF](https://www.google.com)
+#   tags     : journal, journal equivalent, poster, workshop paper, database
+
+########### --------------###########
+
+## 2023
+
+-  authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Indecent Disclosures: Anti-Corruption Reforms and Political Selection"
+   year     : 2023
+   venue    : American Journal of Political Science
+   volume   : 67
+   issue    : 3
+   pages    : 503-519
+   link     : Szakonyi AJPS 2022.pdf
+   abstract : "Does the passage of anticorruption reforms affect the types of people that want to serve in government? This article evaluates the effects of a common tool to fight corruption—financial disclosures—using data on 25,642 elections in Putin-era Russia. I argue that financial disclosures function like a personal audit, generating information for journalists and prosecutors to investigate illicit gains earned inside and outside of government. Exploiting staggered elections, I find that requiring financial disclosures leads to roughly 25% fewer incumbents seeking reelection and 10% fewer candidates with suspicious financial histories. Greater media freedom and law enforcement capacity further increase the risk of corruption and tax evasion being uncovered, resulting in even fewer candidacies from those criminally exposed. Increasing transparency changes the incentives for serving in elected office, even in settings where other political motives may be at play."
+
+-  authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Private Sector Policymaking: Business Background and Politicians’ Behavior in Office"
+   year     : 2021
+   venue    : Journal of Politics
+   volume   : 83
+   issue    : 1
+   pages    : 260-276
+   link     : Szakonyi JOP 2021.pdf
+   abstract : "Candidates often tout their private sector experience when running for public office. But do businessperson politicians actually govern differently? This paper argues that given their preferences and managerial expertise, businesspeople in office adopt policies favorable to the business community and improve government efficiency. To test these claims, I collect data on over 33,000 Russian mayors and legislators and investigate policy outcomes using detailed municipal budgets and over a million procurement contracts. Using a regression discontinuity design, I find that businessperson politicians increase expenditures on roads and transport, while leaving health and education spending untouched. Prioritizing economic over social infrastructure brings immediate benefits to firms, while holding back long-term accumulation of human capital. Businesspeople also do not reduce budget deficits, but rather adopt less competitive methods for selecting contractors, particularly in corruption-ripe construction. In all, businessperson politicians do more to make government run for business, rather than like a business."
+
+-  authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Princelings in the Private Sector: The Value of Nepotism"
+   year     : 2019
+   venue    : Quarterly Journal of Political Science
+   volume   : 14
+   issue    : 4
+   pages    : 349-381
+   link     : Frye, Reuter, and Szakonyi World Politics 2019.pdf   
+   abstract : "What is the value of a family tie? Nepotism is a common feature of democratic and non-democratic systems, but our understanding of how and why family members of government officials receive preferential treatment is limited. Using administrative data on the universe of Moscow citizens to identify family links, I adopt a difference-in-differences design to estimate the labor market returns of having a relative enter the Russian government from 1999 to 2004. Employment rates and annual wages increase for individuals related to federal bureaucrats. Surprisingly, these relatives just as often find work in the private sector, over which the government has no formal control. To explain this, I demonstrate that companies strategically hire officials’ family members in order to receive state contracts and preferential regulatory treatment. Governments may be willing to overlook this type of favoritism in the allocation of jobs, since even if they do not benefit directly, nepotism creates a class of individuals invested in the current power structure."
+
+-  authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Businesspeople in Elected Office: Identifying Private Benefits from Firm-Level Returns"
+   year     : 2018
+   venue    : American Political Science Review
+   volume   : 112
+   issue    : 2
+   pages    : 322-338
+   link     : Szakonyi APSR 2018.pdf
+   abstract : "Do businesspeople who win elected office use their positions to help their firms? Business leaders become politicians around the world, yet we know little about whether their commitment to public service trumps their own private interests. Using an original dataset of 2,703 firms in Russia, I employ a regression discontinuity design to identify the causal effect of firm directors winning seats in subnational legislatures from 2004 to 2013. First, having a connection to a winning politician increases a firm’s revenue by 60% and profitability by 15% over a term in office. I then test between different mechanisms, finding that connected firms improve their performance by gaining access to bureaucrats and not by signaling legitimacy to financiers. The value of winning a seat increases in more politically competitive regions but falls markedly when more businesspeople win office in a convocation. Politically connected firms extract fewer benefits when faced with greater competition from other rent-seekers."
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

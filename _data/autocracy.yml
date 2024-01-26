@@ -1,0 +1,67 @@
+# template
+# if a line doesn't apply, comment it out
+
+# authors  : First M. Last, First M. Last ... & First M. Last
+#   title    : A title goes here: Only first words capitalized
+#   year     : 20##
+#   venue    : The name of the venue goes here
+#   pdf      : [PDF](https://www.google.com)
+#   tags     : journal, journal equivalent, poster, workshop paper, database
+
+########### --------------###########
+
+## 2023
+
+
+-  authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Candidate Filtering: The Strategic Use of Electoral Manipulations in Russia"
+   year     : 2022
+   venue    : British Journal of Political Science
+   volume   : 52
+   issue    : 2
+   pages    : 649-670
+   link     : Szakonyi BJPS 2022.pdf
+   abstract : "Incumbents have many tools to tip elections in their favor, yet little is known about how they choose between strategies. By comparing various tactics, this article argues that electoral malpractice centered on manipulating institutions offers the greatest effectiveness while shielding incumbents from public anger and criminal prosecution. To demonstrate this, the study focuses on a widespread institutional tactic: preventing candidates from accessing the ballot. First, in survey experiments, Russian voters respond less negatively to institutional manipulations, such as rejecting candidates, than to blatant fraud, such as ballot box stuffing. Next, using evidence from 25,935 Russian mayoral races, the article shows that lower societal and implementation costs enable incumbents to strategically reject candidacies from credible challengers and then reduce their electoral vulnerability. In all, the technology behind specific manipulations helps determine when and how incumbents violate electoral integrity."
+
+
+-  coauthors  : (with <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Electoral Manipulation and Regime Support: Survey Evidence from Russia"
+   year     : 2021
+   venue    : World Politics
+   volume   : 73
+   issue    : 2
+   pages    : 275-314
+   link     : Reuter and Szakonyi World Politics 2022.pdf
+   abstract : "Does electoral fraud stabilize authoritarian rule or undermine it? The answer to this question rests in part on how voters evaluate regime candidates who engage in fraud. Using a survey experiment conducted after the 2016 elections in Russia, the authors find that voters withdraw their support from ruling party candidates who commit electoral fraud. This effect is especially large among strong supporters of the regime. Core regime supporters are more likely to have ex ante beliefs that elections are free and fair. Revealing that fraud has occurred significantly reduces their propensity to support the regime. The authors’ findings illustrate that fraud is costly for autocrats not just because it may ignite protest, but also because it can undermine the regime’s core base of electoral support. Because many of its strongest supporters expect free and fair elections, the regime has strong incentives to conceal or otherwise limit its use of electoral fraud."
+
+-  coauthors  : (with <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Elite Defection under Autocracy: Evidence from Russia"
+   year     : 2019
+   venue    : American Political Science Review
+   volume   : 113
+   issue    : 2
+   pages    : 552-568
+   link     : Reuter and Szakonyi APSR 2019.pdf 
+   abstract : "Elite cohesion is a fundamental pillar of authoritarian stability. High-level defections can signal weakness, embolden the opposition, and sometimes, lead to regime collapse. Using a dataset of 4,291 ruling party candidates in Russia, this paper develops and tests hypotheses about the integrity of elite coalitions under autocracy. Our theory predicts that ruling elites defect when there is greater uncertainty about the regime’s willingness to provide spoils. Regimes that share power with the opposition, limit access to spoils, and lack formal institutions see more defections. Co-opting the opposition assuages outside threats but leaves regime insiders disgruntled and prone to defection. Those with personal followings and business connections are the most likely to defect, since they can pursue their political goals independently of the regime. Taken together, our results highlight important tradeoffs among authoritarian survival strategies. Many of the steps autocrats take to repel challenges simultaneously heighten the risk of defections."
+ 
+-  coauthors  : (with <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Online Social Media and Political Awareness in Competitive Authoritarian Regimes"
+   year     : 2015
+   venue    : British Journal of Political Science
+   volume   : 45
+   issue    : 1
+   pages    : 29-51
+   link     : Reuter and Szakonyi BJPS 2015.pdf 
+   abstract : "Do online social media undermine authoritarianism? The conditions under which online social networks can increase public awareness of electoral fraud in non-democracies are examined in this article and it is argued that a given online social network will only increase political awareness if it is first politicized by elites. Survey data from the 2011 Russian parliamentary elections show that usage of Twitter and Facebook, which were politicized by opposition elites, significantly increased respondents’ perceptions of electoral fraud, while usage of Russia’s domestic social networking platforms, VKontakte and Odnoklassniki, which were not politicized by opposition activists, had no effect on perceptions of fraud. This study elucidates the causes of post-election protest by uncovering a mechanism through which knowledge of electoral fraud spreads."
+
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

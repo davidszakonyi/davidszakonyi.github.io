@@ -1,195 +1,430 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>David Szakonyi - About</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+permalink: /
+section_id: home
+---
 
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300i,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <div id="home" class="card">
+    <h2>academic research</h2>
+    <div id="shortBio">
+      <p>I am an associate professor of political science and international affairs at <a href="https://politicalscience.columbian.gwu.edu/">George Washington University</a>. My work focuses on corruption, illicit financial flows, autocracy and non-market strategy, with current projects underway on Russia, the Democratic Republic of Congo, Germany, the United Kingdom and the United States.</p>
+      
+       <p>My work has been published in the <em>American Political Science Review</em>, <em>American Journal of Political Science</em>, <em>Journal of Politics</em>, and <em>American Economic Review</em>, among many others. 
+            My most recent book <a href="https://www.amazon.com/Politics-Profit-Elections-Policymaking-Comparative/dp/1108491634/"><i>Politics for Profit: Business, Elections, and Policymaking in Russia</i></a> examines legalized corruption in the Russian government -- businesspeople running for political office -- and is available from Cambridge University Press (Cambridge Studies in Comparative Politics).</p>
+      <p>For more information, see my <a href="/assets/Szakonyi_CV.pdf">CV</a> as well as lists of my <a href="/#books">books</a> and <a href="/#papers">published papers</a>.</p>
+    </div>
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="css/lightgallery.min.css">    
+    <h2 >anti-corruption and policy work</h2>
     
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
     
-    <link rel="stylesheet" href="css/swiper.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/style.css">
     
-    <!-- Google Analytics -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <div id="investigativeBio" class="logo-container">
+    
+<img src="./assets/logos/ACDC__Initials_Logo-color_HR.jpg" alt="Logo" class="logo">
 
-  ga('create', 'UA-103048495-1', 'auto');
-  ga('send', 'pageview');
+      <p>I am co-founder of the <a href="https://acdatacollective.org/">Anti-Corruption Data Collective</a>, a new type of nonprofit organization that brings together leading journalists, data analysts, academics and policy advocates to expose transnational corruption flows and push for policy change. Since launching in 2020, our work has been featured in dozens of investigative stories in media outlets across United Kingdom, France, Italy, Germany, and the United States. </p>
+    </div>
+        <div id="investigativeBio" class="logo-container">
+<img src="./assets/logos/ponars.png" alt="Logo" class="logo">
+<p>I also serve as the co-Director of <a href="https://www.ponarseurasia.org/">PONARS Eurasia</a>, a network of a network of over 140 academics advancing new approaches to research on Russia and Eurasia. We connect scholarship to policy by fostering an academic community, especially of mid-career and rising scholars, committed to developing policy-relevant and collaborative research. </br></br>I have appeared on television, radio and in print for major international outlets to speak on contemporary events in Russia, its war in Ukraine, money laundering, and corruption. I have also served as an expert witness on a number of legal cases related to the region.</p>
 
+   <script>
+  function toggleContent(button) {
+    const content = button.nextElementSibling;
+    button.classList.toggle("active");
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
 </script>
-<!-- End Google Analytics -->
-  </head>
-  <body>
-  
-  <div class="site-wrap">
 
-    <div class="site-mobile-menu">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
+  </div>
+
+
+
+
+
+
+    <!-- <i class="fa fa-info-circle"></i>-->
+    <!--     <a href="/creative/certainsongsarecursed.html"><div markdown="span" class="alert alert-info" role="alert"> I'm currently running a survey project books break-up songs and memories. Interested in participating? Click here for more information and for a link to the survey!</div></a>-->
+
+   <div id="news">
+
+
+   
+      <div id="news-title">
+        <h2>working papers</h2>
       </div>
-      <div class="site-mobile-menu-body"></div>
+      <ul>
+        {% for item in site.data.working limit: 7 %}
+       <li>
+        <div id="p-info">
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}, </a></span>
+          <span id="p-source">{{item.venue}}</span> <span id="p-author">{{item.year}}.</span>
+          {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+         
+        </div>
+        <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span> Abstract</button>
+
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+        </div>
+      </li>
+        {% endfor %}
+      </ul>
     </div>
     
-
-
-
-    <header class="site-navbar py-3" role="banner">
-
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2" data-aos="fade-down">
-            <h1 class="mb-1">   David Szakonyi</h1>
-          </div>
-          <div class="col-10 col-md-8 d-none d-xl-block" data-aos="fade-down">
-            <nav class="site-navigation position-relative text-right text-lg-center navbar-default navbar-fixed-top" role="navigation">
-
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
-                <li class="active"><a href="index.html">Bio</a></li>
-                                <li><a href="papers.html">Papers</a></li>
-                                <li><a href="book.html">Book</a></li>
-                                <li><a href="commentary.html">Commentary</a></li>
-                                <li><a href="teaching.html">Teaching</a></li>
-                                <li><a href="satellites.html">Satellites</a></li>
-
-                               
-                  
-                  <!-- 
-                     <li class="has-children">
-<ul class="dropdown">
-                    <li><a href="#">Satellites</a></li>
-                    </li>
- -->
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
-            <div class="d-none d-xl-inline-block">
-              <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
-
-                <li>
-                  <div class="twitter"><a href="https://twitter.com/dszakonyi"></a></div>
-                </li>
-                <li>
-                  <div class="linkedin"><a href="https://www.linkedin.com/in/david-szakonyi-3455a615"></a></div>
-                </li>
-                <li>
-                  <div class="scholar"><a href="https://scholar.google.com/citations?user=2hwOdF4AAAAJ&hl=en"></a></div>
-                </li>
-                
-              </ul>
-            </div>
-
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
-
-          </div>
-
-        </div>
+   
+       <div id="news">
+      <div id="news-title">
+        <h2>recent publications</h2>
       </div>
-      
-    </header>
+      <ul>
+      {% for item in site.data.publications limit: 5 %}
+      <li>
+        <div id="p-info">
+          
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}.</a></span>
+          <span id="p-source"><em>{{item.venue}},</em></span>
+          {% if item.volume %}
+          <span id="p-source">{{item.volume}}({{item.issue}}),</span>
+		  {% endif %}
+		  {% if item.pages %}       
+		  <span id="p-pages">{{item.pages}}. </span>
+		  {% endif %}
+		  {% if item.year %}       
+		  <span id="p-pages">{{item.year}}. </span>
+		  {% endif %}
+		  {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+          {% if item.pdf %}
+          <span id="p-source"><a href="./assets/papers/{{item.pdf}}">PDF</a></span>
+          {% endif %}
+          {% if item.blog %}
+            <span id="p-source"><a href="{{item.blog}}">Blog</a>
+          {% endif %}
+          <p>
+        </div>
+                <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span> Abstract</button>
 
-
-  <div class=""  data-aos="fade">
-    <div class="container-fluid">
-      
-      <div class="row justify-content-center">
-        <div class="col-md-11">
-
-          <div class="row mb-5">
-            <div class="col-md-6">
-              <a href="satellites.html"> <img src="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/img/Anadyr_Thumbnail.jpg" alt="Images" class="img-fluid"></a>
-              <span id="first" class="text2">Anadyr, Chukotka<br>Satellite: KH-9; July 4, 1975  </span>
-            </div>
-            <div class="col-md-6">
-
-              <p>I am an assistant professor of political science at <a href="https://politicalscience.columbian.gwu.edu/">George Washington University</a>. I work on non-market strategy, political economy, and corruption, with current projects underway in Russia and the United States. My work has been published in the <em>American Political Science Review</em>, <em>American Journal of Political Science</em>, <em>Journal of Politics</em>, and <em>British Journal of Political Science</em>, among others. 
-            My book <a href="https://www.amazon.com/Politics-Profit-Elections-Policymaking-Comparative/dp/1108491634/"><i>Politics for Profit: Business, Elections, and Policymaking in Russia</i></a> is available from Cambridge University Press (Cambridge Studies in Comparative Politics).</p>
-                        
-            <p>Building on my academic work, I'm a Co-founder of the <a href="http://www.acdatacollective.org/">Anti-Corruption Data Collective</a>, a new initiative bringing together journalists, data analysts, academics and policy advocates to expose corruption in developed countries. So far our investigations have been cited in over two dozen media outlets around the world, including CNN, Bloomberg, Forbes, Washington Post, and many others. </p>
-            
-            <p>I am also Associate Director of the <a href="https://www.ponarseurasia.org//">Program on New Approaches to Research and Security in Eurasia (PONARS Eurasia)</a>, a network of over 140 academics from North America and post-Soviet Eurasia which puts forward new approaches to research on security, politics, economics, and society in Russia and Eurasia.  </p>
-        
-            <p>I have written up my research and offered policy commentary on Russia in the Washington Post, Newsweek, Daily Beast, Moscow Times, and Foreign Affairs. In addition, I have gone on BBC, CBC, Al-Jazeera, and Voice of America, among others, to speal on contemporary events in Russia as well as its war in Ukraine. </p>
-            
-            <p>I received a PhD in political science from Columbia University in 2016 and my B.A. in Political and Social Thought at the University of Virginia, where I was a Jefferson Scholar. I am a Research Fellow at the <a href="https://iims.hse.ru/en/csid/">International Center for the Study of Institutions and Development</a> at the Higher School of Economics in Moscow and also a former Harvard Academy scholar. </p>
-            
-            <p>My CV can be found <a href="https://raw.githubusercontent.com/davidszakonyi/davidszakonyi.github.io/master/Szakonyi_CV.pdf">here</a>.</p>
-
-             <p><i>More information about the satellite image can be found <a href="satellites.html">here</a>.</i></p>
-            </div>
-          </div>
-
-         
-  </div>
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+      </li>
+      {% endfor %}
+      </ul>
     </div>
-         
-         
-  <div class="footer py-4">
-    <div class="container-fluid">
-      <p>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+
+
+
+
+  </div>
+
+  <div id="newsarchive" class="card">
+    <div id="news">
+      <div id="news-title">
+        <h2>news archive.</h2>
+      </div>
+      <ul>
+        {% for item in site.data.news limit: 8 %}
+        <li>
+          <div><p class="news-date"  style="padding-top:0; margin-top:0; text-transform:uppercase; color:#1e1e1e; letter-spacing:.6px;font-weight:500; ">{{item.date | date: "%d %B %Y"}}</p></div>
+          <p>{{item.headline}}</p>
+          
+        </li>
+        <br>
+        {% endfor %}
+      </ul>
+      <div id="news-more">
+        <a id="back">back.</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="books" class="card">
+    <h2>books</h2>
+     </br>
+ </br>
+    <div id="profit" class="book-container1">
+      <img src="./assets/logos/BookCover.jpeg" alt="book1" class="book">
+
+      <p> <a href="https://www.cambridge.org/core/books/politics-for-profit/171E20371665E37EB0A9F6EB2F9A3DE4">Politics for Profit: Business, Elections, and Policymaking in Russia</a>, Cambridge University Press (Cambridge Studies in Comparative Politics), 2020.
+      </br> </br>Businesspeople run for and win elected office around the world, with roughly one-third of members of parliament and numerous heads of states coming directly from the private sector. Yet we know little about why these politicians choose to leave the private sector and what they actually do while in government. In Politics for Profit, I bring to bear sweeping quantitative and qualitative evidence from Putin-era Russia to shed light on why businesspeople contest elections and what the consequences are for their firms and for society when they win. The book develops an original theory of businessperson candidacy as a type of corporate political activity undertaken in response to both economic competition and weak political parties. My evidence then shows that businesspeople help their firms reap huge gains in revenue and profitability while prioritizing investments in public infrastructure over human capital. The book finally evaluates policies for combatting political corruption. 
+      
+      </br> </br> Reviewed in <a href="https://www.cambridge.org/core/journals/perspectives-on-politics/article/politics-for-profit-business-elections-and-policymaking-in-russia-by-david-szakonyi-new-york-cambridge-university-press-2020-350p-10500-cloth-3499-paper/A11EFF968BE7623F486B92E8B4F2E72D">Perspectives on Politics</a>, <a href="https://www.foreignaffairs.com/reviews/capsule-review/politics-profit-business-elections-and-policymaking-russia">Foreign Affairs</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/09668136.2021.2011053">Europe-Asia Studies</a>, <a href="https://www.cambridge.org/core/journals/slavic-review/article/abs/politics-for-profit-business-elections-and-policymaking-in-russia-by-david-szakonyi-cambridge-eng-cambridge-university-press-2020-xiv-330-pp-appendix-bibliography-index-figures-tables-maps-3499-paper/29C1BF72B74AF99A10D1E852B4A76A26">Slavic Review</a>, <a href="https://www.tandfonline.com/doi/abs/10.1080/15387216.2020.1843512">Eurasian Geography and Economics</a>, and <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/gove.12561">Governance</a>.
+
       </p>
     </div>
+ </br>
+ </br>
+ </br>
+    <div id="siege" class="book-container1">
+      <img src="./assets/logos/undersiege.jpg" alt="book2" class="book2">
+
+      <p> <a href="https://www.amazon.com/Under-Siege-Inter-Ethnic-Relations-Abkhazia/dp/0231701306">Under Siege: Inter-Ethnic Relations in Abkhazia</a>. Columbia University Press, 2010, (with Tom Trier and Hedvig Lohm)
+      </br> </br>
+
+Located in the northeastern corner of the Black Sea, Abkhazia was once part of Georgia but broke away from the country after the fall of the Soviet Republic. For fifteen years the region functioned as a de facto independent, though internationally unrecognized, state, until August of 2008, when the short war over South Ossetia (another breakaway territory) ended in Russia's recognition of Abkhazian and South Ossetian sovereignty.
+
+Consequently, Abkhazia has become a crucial component of Russia's struggle to redefine its global influence and a major player in its geopolitical battle with the West. Under Siege clarifies Abkhazia's ethno-political dynamics, which have played a major role in the country's state-building efforts and have come to shape the conditions under which the country's many ethnic communities live. Abkhazians, Armenians, Georgians, and Russians all call Abkhazia home, and this volume explores the effect of the government's de facto status on these groups' ideas of nationhood and continuing tensions between Georgia, Abkhazia, and Russia. This book also launches a rare investigation into the conflict brewing among human rights, minority protections, and Abkhazia's state building project.
+
+      
+      </br> </br> Reviewed in <a href="https://www.cambridge.org/core/journals/slavic-review/article/under-siege-interethnic-relations-in-abkhazia-by-tom-trier-hedvig-lohm-and-david-szakonyi-new-york-columbia-university-press-2010-xiii-160-pp-appendixes-notes-index-tables-maps-5000-hard-bound/B317319698F0DF30B171B6D2F6D267C3">Slavic Review</a>, <a href="https://www.tandfonline.com/doi/full/10.1080/09668136.2013.813158?casa_token=6_oyJ_Pqv_kAAAAA:fT-mqmbKVvxBiQrB7jt3hZg6K_L-xQTguSizDjyfhqcWaAcN7ATQhBnh3SyEd_iz_ZhIA6OeC8Dr">Europe-Asia Studies</a>, <a href="https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/tom-trier-hedvig-lohm-and-david-szakonyi-eds-under-siege-interethnic-relations-in-abkhazia-xi-159-pp-london-hurst-company-2010-25-isbn-978-1-84904-020-4/491C6D9D89C22838C96A5E11E240C839">Bulletin of the School of Oriental and African Studies</a>, and <a href="https://www.cambridge.org/core/journals/nationalities-papers/article/abs/under-siege-interethnic-relations-in-abkhazia-by-tom-trier-hedvig-lohm-and-david-szakonyi-new-york-columbia-university-press-2010-xiii-159-pp-us5000-hardcover-isbn-9780231701303/CE25D6DB19A7AC24C4F17CB9FF9D0B90">Nationalities Papers</a>.
+
+      </p>
+    </div>
+ 
+   
   </div>
 
-    
+  <div id="papers" class="card">
+    <h2>published papers</h2>
+   
+   
+   
+   <p1>money and politics</p1>
+   </br>
+   </br>
+   
+    <ul>
+      {% for item in site.data.money limit: 20 %}
+      <li>
+        <div id="p-info">
+          
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}.</a></span>
+          <span id="p-source"><em>{{item.venue}},</em></span>
+          {% if item.volume %}
+          <span id="p-source">{{item.volume}}({{item.issue}}),</span>
+		  {% endif %}
+		  {% if item.pages %}       
+		  <span id="p-pages">{{item.pages}}. </span>
+		  {% endif %}
+		  {% if item.year %}       
+		  <span id="p-pages">{{item.year}}. </span>
+		  {% endif %}
+		  {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+          {% if item.pdf %}
+          <span id="p-source"><a href="./assets/papers/{{item.pdf}}">PDF</a></span>
+          {% endif %}
+          {% if item.blog %}
+            <span id="p-source"><a href="{{item.blog}}">Blog</a>
+          {% endif %}
+          <p>
+        
+        
+              <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span>  Abstract</button>
 
-    
-    
-  </div>
- <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/bootstrap-datepicker.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/aos.js"></script>
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+</div>
+      </li>
+      {% endfor %}
+      </ul>
+      
 
-  <script src="js/picturefill.min.js"></script>
-  <script src="js/lightgallery-all.min.js"></script>
-  <script src="js/jquery.mousewheel.min.js"></script>
+   <p1>autocracy</p1>
+   </br>
+   </br>
+   
+    <ul>
+      {% for item in site.data.autocracy limit: 20 %}
+      <li>
+        <div id="p-info">
+          
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}.</a></span>
+          <span id="p-source"><em>{{item.venue}},</em></span>
+          {% if item.volume %}
+          <span id="p-source">{{item.volume}}({{item.issue}}),</span>
+		  {% endif %}
+		  {% if item.pages %}       
+		  <span id="p-pages">{{item.pages}}. </span>
+		  {% endif %}
+		  {% if item.year %}       
+		  <span id="p-pages">{{item.year}}. </span>
+		  {% endif %}
+		  {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+          {% if item.pdf %}
+          <span id="p-source"><a href="./assets/papers/{{item.pdf}}">PDF</a></span>
+          {% endif %}
+          {% if item.blog %}
+            <span id="p-source"><a href="{{item.blog}}">Blog</a>
+          {% endif %}
+          <p>
+        
+        
+              <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span>  Abstract</button>
 
-  <script src="js/main.js"></script>
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+</div>
+      </li>
+      {% endfor %}
+      </ul>      
+      
+      
+    <p1>bureaucracy</p1>
+   </br>
+   </br>
+   
+    <ul>
+      {% for item in site.data.bureaucracy limit: 20 %}
+      <li>
+        <div id="p-info">
+          
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}.</a></span>
+          <span id="p-source"><em>{{item.venue}},</em></span>
+          {% if item.volume %}
+          <span id="p-source">{{item.volume}}({{item.issue}}),</span>
+		  {% endif %}
+		  {% if item.pages %}       
+		  <span id="p-pages">{{item.pages}}. </span>
+		  {% endif %}
+		  {% if item.year %}       
+		  <span id="p-pages">{{item.year}}. </span>
+		  {% endif %}
+		  {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+          {% if item.pdf %}
+          <span id="p-source"><a href="./assets/papers/{{item.pdf}}">PDF</a></span>
+          {% endif %}
+          {% if item.blog %}
+            <span id="p-source"><a href="{{item.blog}}">Blog</a>
+          {% endif %}
+          <p>
+        
+        
+              <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span>  Abstract</button>
+
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+</div>
+      </li>
+      {% endfor %}
+      </ul>           
+      
+     <p1>clientelism</p1>
+   </br>
+   </br>
+   
+    <ul>
+      {% for item in site.data.clientelism limit: 20 %}
+      <li>
+        <div id="p-info">
+          
+          <span id="p-title"><a href="./assets/papers/{{item.link}}" target="_blank" rel="noopener noreferrer">{{item.title}}.</a></span>
+          <span id="p-source"><em>{{item.venue}},</em></span>
+          {% if item.volume %}
+          <span id="p-source">{{item.volume}}({{item.issue}}),</span>
+		  {% endif %}
+		  {% if item.pages %}       
+		  <span id="p-pages">{{item.pages}}. </span>
+		  {% endif %}
+		  {% if item.year %}       
+		  <span id="p-pages">{{item.year}}. </span>
+		  {% endif %}
+		  {% if item.coauthors %}       
+		  <span id="p-pages">{{item.coauthors}} </span><br>
+		  {% endif %}
+          {% if item.pdf %}
+          <span id="p-source"><a href="./assets/papers/{{item.pdf}}">PDF</a></span>
+          {% endif %}
+          {% if item.blog %}
+            <span id="p-source"><a href="{{item.blog}}">Blog</a>
+          {% endif %}
+          <p>
+        
+        
+              <div id="p-abstract">
+         <button class="collapsible" onclick="toggleContent(this)">
+  <span class="arrow"></span>  Abstract</button>
+
+<div class="content">
+  <p>{{item.abstract}}</p>
+</div>
+</div>
+      </li>
+      {% endfor %}
+      </ul>           
+           
+      <div id="news">
+        <div id="news-more">
+          <a href="https://scholar.google.com/citations?user=2hwOdF4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">more via google scholar</a><br>
+          <a href="/assets/Szakonyi_CV.pdf" target="_blank" rel="noopener noreferrer">or via my cv.</a>
+        </div>
+      </div>
+    </div>
+
   
-  <script>
-    $(document).ready(function(){
-      $('#lightgallery').lightGallery();
-    });
-  </script>
-    
-  </body>
-</html>
-</html>
+  
+  <div id="teaching" class="card">
+    <h2>teaching</h2>
+    <div id="shortBio">
+      <p>I teach the following classes at George Washington University.</p>
+      </br>
+      <tl>
+      <li class="creative-list">PSC 3192W: Money and Influence in Politics Around the World </li>
+        <li class="creative-list">PSC 2366: Russian Politics</li>
+      <li class="creative-list">PSC 8331: Advanced Theories of Comparative Politics</li>
+     <li class="creative-list">PSC 8108: Craft of Political Inquiry</li>
+</tl>
+     
+  </div>
+  </div>
+  
+  
+  
+
+  <div id="contact" class="card">
+    <h2>contact me</h2>
+    <div id="shortBio">
+      <p>Email: <a href="mailto:davidszakonyi@gmail.com">davidszakonyi@gmail.com.</a></p><br>
+      <p>I'm also around on <a href="https://twitter.com/dszakonyi?lang=en">Twitter</a>.</p>
+ </div>
+  </div>
+  
+  
+  
+  <div id="cv" class="card">
+    <h2>curriculum vitae</h2>
+    <div id="shortBio">
+      <p><a href="/assets/Szakonyi_CV.pdf" target="_blank" rel="noopener noreferrer">Click here to open PDF in a new window.</a></p>
+    </div>
+  
+    <iframe src="/assets/Szakonyi_CV.pdf" width="100%" height="500px">
+      </iframe>
+  </div>
+
+
+
+
+  <div id="contact" class="card">
+    <h2>contact me</h2>
+    <div id="shortBio">
+      <p>Email: <a href="mailto:davidszakonyi@gmail.com">davidszakonyi@gmail.com.</a></p><br>
+      <p>I'm also around on <a href="https://twitter.com/dszakonyi?lang=en">Twitter</a>.</p>
+ </div>
+  </div>

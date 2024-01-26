@@ -1,0 +1,60 @@
+# template
+# if a line doesn't apply, comment it out
+
+# authors  : First M. Last, First M. Last ... & First M. Last
+#   title    : A title goes here: Only first words capitalized
+#   year     : 20##
+#   venue    : The name of the venue goes here
+#   pdf      : [PDF](https://www.google.com)
+#   tags     : journal, journal equivalent, poster, workshop paper, database
+
+########### --------------###########
+
+## 2023
+
+-  coauthors : (with <a href="https://stanford.edu/~mbest/" class="special-link">Michael Best</a> and <a href="https://sites.google.com/site/jonashjort/" class="special-link">Jonas Hjort</a>)
+   title    : Individuals and Organizations as Sources of State Eﬀectiveness, and Consequences for Policy Design
+   year     : 2023
+   venue    : American Economic Review
+   volume   : 113
+   issue    : 8
+   pages    : 2121-67
+   link     : BestHjortSzakonyi-StateEffectivenessProcurement-withOA.pdf
+   abstract : "Bureaucrats implement policy. How important are they for a state’s productivity? And do the tradeoffs between policies depend on their effectiveness? Using data on 16 million public purchases in Russia, we show that 39 percent of the variation in prices paid for narrowly defined items is due to the individual bureaucrats and organizations who manage procurement. Low-price buyers also display higher spending quality. Theory suggests that such differences in effectiveness can be pivotal for policy design. To illustrate, we show that a common one—bid preferences for domestic suppliers—substantially improves procurement performance, but only when implemented by ineffective bureaucrats."
+
+-  coauthors  : (with <a href="http://www.columbia.edu/~ju2178/" class="special-link">Johannes Urpelainen</a>)
+   title    : "Who Benefits From Economic Reform? Firms and Distributive Politics"
+   year     : 2014
+   venue    : Journal of Politics
+   volume   : 76
+   issue    : 3
+   pages    : 841-858
+   link     : Szakonyi and Urpelainen JOP 2014.pdf
+   abstract : "While the distributional consequences of economic reform have captivated political scientists, few studies have investigated the ability of different firms to reap gains from policy change. Reforms indeed create winners and losers, but there is scant evidence on specifically which firms benefit and which firms lose out. We propose that the benefits from liberalizing reform accrue mostly to firms that are not vulnerable to extortion by the state and that have past experience with lobbying through a business association. This theory goes against the common intuition that liberalization reduces the importance of the state in the distribution of gains from economic activity. To test the theory, we examine how India’s national electricity reform in 2003 changed the quality of power supply for 1,094 manufacturing firms between 2002 and 2005. We find that liberalization produced highly skewed benefits and identify the politically salient characteristics that drive firm-level distributional inequality."
+   
+-  coauthors  : (with <a href="http://www.columbia.edu/~ju2178/" class="special-link">Johannes Urpelainen</a>)
+   title    : "Veto Players and the Value of Political Control: A Theory with Evidence From Energy Privatization"
+   year     : 2014
+   venue    : Comparative Political Studies
+   volume   : 47
+   issue    : 10
+   pages    : 1384-1415
+   link     : Szakonyi and Urpelainen CPS 2014.pdf
+   abstract : "We examine how veto players and the government’s valuation of political control of economic activity affect the likelihood of privatization. When the government ascribes a high value to political control, veto players impede privatization because they would have to be compensated for their losses. When the value of political control is low, the government prefers to privatize enterprises that become difficult to control with multiple veto players. We test the theory against data on energy privatizations in developing countries, 1988-2008. Oil prices offer a quantitative measure of the government’s valuation of controlling the energy sector. When oil prices are high, the government has a keen interest in controlling the energy sector. Accordingly, additional veto players reduce (increase) the likelihood of privatization in times of high (low) oil prices. Beyond illuminating the politics of privatization, the results inform debates on the role of veto players in government policy."
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

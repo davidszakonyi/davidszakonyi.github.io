@@ -1,0 +1,59 @@
+# template
+# if a line doesn't apply, comment it out
+
+# authors  : First M. Last, First M. Last ... & First M. Last
+#   title    : A title goes here: Only first words capitalized
+#   year     : 20##
+#   venue    : The name of the venue goes here
+#   pdf      : [PDF](https://www.google.com)
+#   tags     : journal, journal equivalent, poster, workshop paper, database
+
+########### --------------###########
+
+## 2023
+
+
+-  coauthors  : (with <a href="https://www.timothyfrye.com/" class="special-link">Timothy Frye</a> and <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Vote Brokers, Clientelist Appeals, and Voter Turnout: Evidence from Russia and Venezuela"
+   year     : 2019
+   venue    : World Politics
+   volume   : 71
+   issue    : 4
+   pages    : 710-746
+   link     : Frye, Reuter, and Szakonyi World Politics 2019.pdf
+   abstract : "Modern clientelist exchange is typically carried out by intermediaries—party activists, employers, local strongmen, traditional leaders, and the like. Politicians use such brokers to mobilize voters, yet little about their relative effectiveness is known. The authors argue that broker effectiveness depends on their leverage over clients and their ability to monitor voters. They apply their theoretical framework to compare two of the most common brokers worldwide, party activists and employers, arguing the latter enjoy numerous advantages along both dimensions. Using survey-based framing experiments in Venezuela and Russia, the authors find voters respond more strongly to turnout appeals from employers than from party activists. To demonstrate mechanisms, the article shows that vulnerability to job loss and embeddedness in workplace social networks make voters more responsive to clientelist mobilization by their bosses. The results shed light on the conditions most conducive to effective clientelism and highlight broker type as important for understanding why clientelism is prevalent in some countries but not others."
+
+-  coauthors : (with <a href="https://www.timothyfrye.com/" class="special-link">Timothy Frye</a> and <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Hitting Them with Carrots: Voter Intimidation and Vote Buying In Russia"
+   year     : 2019
+   venue    : British Journal of Political Science
+   volume   : 49
+   issue    : 3
+   pages    : 857-861
+   link     : Frye, Reuter, and Szakonyi BJPS 2018.pdf  
+   abstract : "Scholars have identified many ways that politicians use carrots, such as vote buying, to mobilize voters, but have paid far less attention to how they use sticks, such as voter intimidation. This article develops a simple argument which suggests that voter intimidation should be especially likely where vote buying is expensive and employers have greater leverage over employees. Using survey experiments and crowdsourced electoral violation reports from the 2011–12 election cycle in Russia, the study finds evidence consistent with these claims. Moreover, it finds that where employers have less leverage over employees, active forms of monitoring may supplement intimidation in order to encourage compliance. These results suggest that employers can be reliable vote brokers; that voter intimidation can persist in a middleincome country; and that, under some conditions, intimidation may be employed without the need for active monitoring."
+
+-  coauthors : (with <a href="https://www.timothyfrye.com/" class="special-link">Timothy Frye</a> and <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a>)
+   title    : "Political Machines at Work: Voter Mobilization and Electoral Subversion in the Workplace"
+   year     : 2014
+   venue    : World Politics
+   volume   : 66
+   issue    : 2
+   pages    : 195-228
+   link     : Frye, Reuter, and Szakonyi World Politics 2014.pdf
+   abstract : "The authors explore how modern autocrats win elections by inducing employers to mobilize their employees to vote for the regime and thereby subvert the electoral process. Using two original surveys of employers and workers conducted around the 2011 parliamentary elections in Russia, they find that just under one-quarter of employers engaged in some form of political mobilization. They then develop a simple framework for identifying which firms engage in voter mobilization and which workers are targeted for mobilization. Firms that are vulnerable to state pressure—financially dependent firms and those in sectors characterized by asset immobility—are among the most common sites of workplace-based electoral subversion. The authors also find that workers who are especially dependent on their employer are more likely to be targeted for mobilization. By identifying the conditions under which workplace mobilization occurs in authoritarian regimes, the authors contribute to the long-standing debate about the economic bases of democratization. In addition, they explore an understudied means of subverting elections in contemporary autocracies: the use of economic coercion to mobilize voters. Moreover, their research finds that clientelist exchange can thrive in industrial settings and in the absence of deeply embedded political parties."
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

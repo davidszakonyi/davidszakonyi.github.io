@@ -1,0 +1,73 @@
+# template
+# if a line doesn't apply, comment it out
+
+# - authors  : First M. Last, First M. Last ... & First M. Last
+#   title    : A title goes here: Only first words capitalized
+#   year     : 20##
+#   venue    : The name of the venue goes here
+#   pdf      : [PDF](https://www.google.com)
+#   tags     : journal, journal equivalent, poster, workshop paper, database
+
+########### --------------- ###########
+
+## 2023
+
+ - authors  : <span class="bolder">David Szakonyi</span><a href="https://fhollenbach.org/" class="special-link">Florian Hollenbach</a>
+   title    : "Corruption and Co-Optation in Autocracy: Evidence from Russia"
+   year     : 2023
+   venue    : October
+   link     : Szakonyi - Corruption and Cooptation in Autocracy.pdf
+   abstract : "Do corrupt officials govern differently in elected office? This paper develops a theoretical framework and analyzes new data from financial disclosures to estimate the governing costs of corruption. First, I uncover substantial hidden wealth held by roughly one-quarter of the legislators in the Russian Duma; these `kompromat deputies' are vulnerable to damaging information being used against them by the regime. Analyzing their behavior in office, I find that these deputies are less active and more absent members of parliament. When called to vote, kompromat deputies from the opposition also more fervently support the regime’s political agenda. Finally, kompromat deputies are less likely to win re-election, suggesting they may have shorter time horizons as well as that parties may have incentives to rotate them out. Autocrats permit and then monitor corruption in order to co-opt potential challengers, who in turn trade loyalty to the regime in exchange for opportunities to self-enrich."
+         
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "The End of Londongrad? The Impact of Beneficial Ownership Transparency on Offshore Investment in UK Property"
+   year     : 2023
+   venue    : March
+   link     : 12 Collin, Hollenbach, and Szakonyi - Working Paper.pdf
+   abstract : "UK property markets are thought to be a common destination for corrupt and criminal assets, who often invest through offshore shell companies. Following the Russian invasion of Ukraine in 2022, we study the impact of the introduction of a policy in the UK intended to eliminate the anonymous ownership of property by requiring offshore companies to file their beneficial owners on public register. We find that new purchases by companies based in tax havens fell substantially following government announcements that the policy would be introduced that year, and further declines following the establishment of a register of ownership. While the policy has effectively led the offshore market to slow, between £45–78 billion worth of UK real estate is still owned by companies based in tax havens, some of which have yet to comply with their reporting obligations. We do not find strong evidence of price effects nor substitution into ownership through suspicious domestic companies, although larger movements may manifest as firms respond finalization of the policy in January 2023."  
+   coauthors : (with <a href="https://sites.google.com/view/mattcollin/home" class="special-link">Matt Collin</a> and <a href="https://fhollenbach.org/" class="special-link">Florian Hollenbach</a>)
+
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Opposition Rule Under Autocracy: Evidence from Russia"
+   year     : 2024
+   venue    : January
+   link     : Szakonyi 2024 - Opposition Rule.pdf
+   abstract : "How does the opposition govern under autocracy? Most authoritarian regimes tolerate some degree of internal opposition, allowing it to contest and even take power. Yet we know little about how such power-sharing dynamics affect governance. In this paper, I exploit a unique instance where the opposition won control of political institutions in a prominent electoral autocracy: the 2017 Moscow municipal elections. Using a difference-in-differences design, I find that opposition control of municipal councils reduced the financial returns from office for ruling party deputies. This decrease in earnings comes from opposition-held councils removing rent-seeking opportunities by organizing more transparent, competitive procurement and more efficiently allocating budget expenditures. Using a survey experiment, I then show that voters prefer opposition candidates with municipal governing experience over ruling party ones without it. Even in repressive environments, challenging autocratic rule may be well served by joining rather than boycotting institutions."  
+
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "The Political Consequences of Private Equity: Evidence from U.S. Leveraged Buyouts"
+   year     : 2022
+   venue    : June
+   link     : Hollenbach and Szakonyi - Political Consequences of Private Equity.pdf
+   abstract : "Private equity (PE) firms have quickly become some of the largest financiers in US politics. In this paper, we examine the role of coordinated corporate political activity in the private equity playbook for managing and retooling portfolio company acquisitions. First, we assemble a unique dataset of leveraged buyouts of US companies from 2008-2019. Using a difference-in-differences estimator on matched sets of firms, we show that portfolio companies acquired by private equity subsequently increased their federal lobbying efforts. These effects are particularly large for companies working in the health care industry as well as for firms that had stayed out of politics before the acquisition. Taken together, these results suggest that the PE industry’s financial performance owes not just to the financial and operational engineering, but also an optimization of political strategies in order to increase firm value."  
+   coauthors : (with <a href="https://fhollenbach.org/" class="special-link">Florian Hollenbach</a>)
+      
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "The Impact of Beneficial Ownership Transparency on Illicit Purchases of US Property"
+   year     : 2022
+   venue    : January
+   link     : 11 Collin, Hollenbach, and Szakonyi - Working Paper.pdf
+   abstract : "High value real estate is a popular destination for corrupt and criminal foreign assets, in part caused by limited oversight and lack of transparency in real estate transactions. In response to these concerns, the US Treasury began implementing a series of Geographic Targeting Orders (GTOs) in 2016, forcing corporate buyers making all-cash purchases in targeted counties to report the company’s ultimate owner. To estimate the causal effect of GTOs on these types of transactions, we combine data on on millions of real estate transactions over the period 2014-2019 with a staggered difference-in-differences design. Our analysis suggests the absence of an aggregate effect of the GTOs on corporate all-cash purchases in targeted counties, as well as little evidence of substitution into other types of purchases. We contend that the lack of overt enforcement and validation of the ownership requirements failed to create a sufficient deterrent effect to drive out participation in the sector by illicit actors."  
+   coauthors : (with <a href="https://sites.google.com/view/mattcollin/home" class="special-link">Matt Collin</a> and <a href="https://fhollenbach.org/" class="special-link">Florian Hollenbach</a>)   
+
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Partisan Animosity and Support for Undemocratic Behavior: The Case of Russia"
+   year     : 2023
+   venue    : October
+   link     : Polarization_102423.pdf
+   abstract : "When can autocrats subvert democracy without paying electoral costs? Although ideological and partisan attachments are weak in many contemporary autocracies, regime supporters often have a strong emotional aversion toward the opposition, who the regime portrays as traitors. Drawing on the literature on affective polarization, we investigate whether regime supporters who hold such attitudes are less likely to punish regime candidates who behave undemocratically using a vignette survey experiment conducted in Russia. We find little evidence that regime supporters are more likely to excuse most types of undemocratic actions by their copartisan candidates. However, those supporters who express antipathy toward the regime’s staunchest opposition—Alexei Navalny and his supporters—are more likely to condone anti-democratic actions that specifically sideline Navalny’s movement. Negative affect toward the opposition may thus help explain how autocrats survive the periodic rise of challengers; yet it does not guarantee that they will avoid backlash for undemocratic actions."  
+   coauthors : (with <a href="https://www.yeorhan.com/" class="special-link">Yunus Orhan</a> and <a href="https://ojreuter.com/" class="special-link">Ora John Reuter</a> and <a href="https://www.brynrosenfeld.com/" class="special-link">Bryn Rosenfeld</a>)   
+
+ - authors  : <span class="bolder">David Szakonyi</span>
+   title    : "Corruption and Property Rights in Russia: Evidence from the Commercial Court System"
+   year     : 2022
+   venue    : September
+   abstract : "Corruption is often rampant within state bureaucracies and judicial systems, yet we know little about its micro-level consequences on policymaking and the provision of public goods. In this paper, we investigate how corruption shapes property rights protection in one prominent autocracy: Russia. First, we use income and asset disclosures to construct novel individual-level measures of corruption for 366 commercial court judges working in and around Moscow. Then, drawing on data from more than 400,000 court cases heard between 2011-2018, we leverage random assignment of cases to judges to show that corrupt judges are much more likely to find in favor of private firms in their disputes with government agencies. Not only are these decisions of lower judicial quality, but they tend to favor disreputable firms. In contrast to existing studies' emphasis on political pressure's impact on Russian court cases, we show that judicial corruption enables firms to capture the state, depriving it of financial resources and undermining the rule of law."  
+   coauthors : (with <a href="https://sites.northwestern.edu/jgansmorse/" class="special-link">Jordan Gans-Morse</a>)   
+
+   
+   
+   
+   
+   
+   

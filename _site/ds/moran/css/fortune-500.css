@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+	--main-blue: #045085;
+	--dark-gray: #363636;
+	--white: #FFFFFF;
+	--light-gray: #CFCFCF;
+}
+
+/*-------------1rem=10px-----------*/
+
+html{
+	font-size: 62.5%;
+	margin: 0 auto;
+}
+
+body{
+	background: var(--main-blue);
+	font-size: 1.6rem;
+	margin: 0 auto;
+}
+
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*------------TYPOGRAPHY------------*/
+
+h1 {
+	font-family: solano-gothic-pro-mvb,sans-serif;
+	font-weight: 500;
+	font-size: 4.8rem;
+	line-height: 6.0rem;
+	text-align: center;
+	margin-bottom: 2.4rem;
+	color: var(--white);
+}
+
+h2{
+	font-family: solano-gothic-pro-mvb,sans-serif;
+	font-weight: 500;
+	font-size: 2.8rem;
+	line-height: 3.6rem;
+	color: var(--white);
+	margin-bottom: 2.4rem;
+}
+
+p{
+	font-family: "Montserrat",sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: var(--white);
+	margin-bottom: 0;
+}
+
+.para2{
+	margin-bottom: 1.6rem;
+}
+
+.fortune {
+	font-family: solano-gothic-pro-mvb, sans-serif;
+	font-weight: 700;
+	font-size: 4.8rem;
+	line-height: 6.0rem;
+}
+
+.description{
+	font-family: "Montserrat",sans-serif;
+	font-weight: 400;
+	font-size: 2.0rem;
+	line-height: 2.4rem;
+	margin-bottom: 2.4rem;
+	color: var(--white);
+}
+
+.byline{
+	font-family: solano-gothic-pro-mvb,sans-serif;
+	font-weight: 300;
+	font-size: 3.2rem;
+	line-height: 4.0rem;
+	margin-bottom: 0;
+	color: var(--white);
+}
+
+li{
+	font-family: "Montserrat",sans-serif;
+	font-weight: 400;
+	font-size: 1.6rem;
+	line-height: 3.2rem;
+	color: var(--white);
+}
+
+/*---------COLOR PALETTE SIZING--------*/
+img{
+	width: 100%;
+	margin-bottom: 1.6rem;
+}
+
+
+/*---------------HEADER----------------*/
+header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	background: var(--main-blue);
+	padding: 2.4rem 0;
+	max-width: 80vw;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+
+/*--------------NAVIGATION-------------*/
+nav{
+	padding: 0.8rem 1.6rem;
+	margin: 0 auto;
+	background: var(--dark-gray);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 0.125rem solid var(--white);
+}
+
+nav ul{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	list-style-type: none;
+	padding: 0 0;
+	margin: 0 auto;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-family: solano-gothic-pro-mvb,sans-serif;
+	font-weight: 400;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	padding: 0.8rem 2.4rem;
+	color: var(--white);
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	color: var(--white);
+	border-bottom: 0.125rem solid var(--light-gray);
+}
+
+.active{
+	text-decoration: none;
+	color: white;
+	border-bottom: 0.125rem solid var(--white);
+}
+
+/*--------------LISTS-------------------*/
+
+ol{
+	list-style-position: inside;
+}
+
+
+/*---------------SCROLLYTELLING--------------*/
+
+.scrollytelling .scrolly {
+  display: flex;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 3rem auto;
+}
+.scrollytelling .scrolly > * {
+  flex: 1;
+}
+
+.scrollytelling .scrolly section {
+  padding-right: 1rem;
+  max-width: 48%;
+}
+
+.scrollytelling .scrolly section .step {
+/*  min-height: 88vh;*/
+  margin-bottom: 1rem;
+  margin-bottom: 7.4rem;
+  transition: z-index 250ms ease-in-out;
+  background-color: var(--dark-gray);
+  padding: 2.4rem;
+}
+.scrollytelling .scrolly section .step:last-of-type {
+  margin-bottom: 0;
+}
+
+.scrollytelling .scrolly section .step p {
+  margin: 0;
+  padding: 1rem;
+  font-weight: 400;
+}
+.scrollytelling .scrolly div.sticky {
+  position: sticky;
+  max-width: 45vw;
+  height: 88vh;
+  margin: 0;
+  top: 10vh;
+  left: 0;
+}
+
+#index-0{
+  z-index: 998;
+  position: absolute;
+  width: 100%;
+}
+
+#index-1, #index-2, #index-3, #index-4, #index-5, #index-6, #index-7, #index-8{
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.flourish-credit{
+	display: none;
+}
+
+.spacer{
+	height: 7.4rem;
+}
+
+/*--------scroll to top button------------*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 0.8rem; /* Place the button at the bottom of the page */
+  left: 0.8rem; /* Place the button 30px from the right */
+  z-index: 999; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--white); /* Set a background color */
+  color: #000000; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 1.6rem; /* Some padding */
+  border-radius: 0.25rem; /* Rounded corners */
+  font-family: solano-gothic-pro-mvb,sans-serif;
+	font-weight: 400;
+	font-size: 2.4rem; /* Increase font size */
+	line-height: 3.2rem;
+}
+
+#myBtn:hover {
+  background-color: var(--light-gray); /* Add a dark-grey background on hover */
+}
+
+/*-----------FILLER-----------*/
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 60vw;
+	height: 100vh;
+  padding: 2.4rem 2.4rem;
+}
+
+.conclusion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 60vw;
+	height: 100vh;
+  padding: 2.4rem 2.4rem;
+}
+
+footer{
+	background-color: var(--dark-gray);
+	padding: 2.4rem;
+}
+
+footer p{
+	max-width: 60vw;
+	margin: 0 auto;
+	font-family: "Montserrat",sans-serif;
+	font-weight: 400;
+	font-size: 1.4rem;
+	line-height: 2.0rem;
+	color: var(--white);
+	text-align: center;
+}
+

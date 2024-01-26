@@ -1,0 +1,9 @@
+# template
+# if a line doesn't apply, comment it out
+
+# - urlpath    : ""
+
+########### --------------- ###########
+
+- urlpath    : "/assets/logos/new_head_shot2_small.jpg"
+  value      : 1w
