@@ -25,6 +25,7 @@
    title    : "Investing in Politics: Private Equity and Coordinated Political Activity"
    year     : 2025
    venue    : August
+   link     : HollenbachSzakonyi_InvestingPolitics_2025.pdf
    abstract : "Despite the private equity industry’s rapidly growing presence in the U.S. economy, we know far more about its influence on corporate governance than its role in shaping public policy. In this paper, we document how private equity's distinctive ownership structure facilitates coordinated political activity among its portfolio companies, revealing a covert channel of influence over policymaking. First, we assemble a novel dataset of U.S. leveraged buyouts from 2000-2018 and match them to federal lobbying records. Applying a doubly robust difference-in-differences estimator, we show that portfolio companies acquired by private equity subsequently increase their federal lobbying. Then using an issue-level dataset, we find that after a buyout, portfolio companies are five times more likely to lobby on the very issues their PE acquirers had themselves lobbied on before. These findings demonstrate that private equity’s success owes not just to financial and operational engineering, but also to a deliberate coordination and optimization of political influence across portfolios."  
    coauthors : (with <a href="https://fhollenbach.org/" class="special-link">Florian Hollenbach</a>)
 
