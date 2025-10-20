@@ -177,6 +177,9 @@ ul
 #papers
   display none
 
+#current
+  display none
+
 #books
   @media screen and (min-width: 1000px)
     padding-right 250px
@@ -217,6 +220,43 @@ ul
           margin-right 10px
 
 #papers
+  @media screen and (min-width: 1000px)
+    padding-right 100px
+    padding-bottom 50px
+  h2
+    font-size 14px
+    margin 35px 0
+    font-weight 300
+    &:nth-child(2)
+      margin-top 0
+  li
+    font-size 12px
+    overflow hidden
+    margin-bottom 20px
+  #disclaimer
+    background-color rgba(255,255,255,.7)
+    font-size 10px
+    margin-top -50px
+    margin-bottom 35px
+    span.fa
+      color #ffc156
+      margin-right 7px
+  #p-icon
+    float left
+    font-size 25px
+    margin-right 40px
+  #p-info
+    width calc(100% - 70px)
+    float left
+    .separator
+      margin 0 6px
+  #p-award
+    font-weight 500
+    span.fa
+      color #FD7024
+      margin-right 7px
+
+#current
   @media screen and (min-width: 1000px)
     padding-right 100px
     padding-bottom 50px

@@ -20,18 +20,22 @@
         var e = function(e) {
                 e ? ($("#books").fadeOut("fast"), $("#papers").fadeOut("fast"), $("#home").fadeIn("fast")) : ($("#books").hide(), $("#papers").hide(), $("#home").show()),
                 $("#navi-books a").removeClass("navi-active"),
+                                $("#navi-current a").removeClass("navi-active"),
+
                 $("#navi-papers a").removeClass("navi-active"),
                 $("#navi-home a").addClass("navi-active")
             },
             o = function(e) {
                 e ? ($("#books").fadeIn("fast"), $("#papers").fadeOut("fast"), $("#home").fadeOut("fast")) : ($("#books").show(), $("#papers").hide(), $("#home").hide()),
                 $("#navi-home a").removeClass("navi-active"),
+                $("#navi-current a").removeClass("navi-active"),
                 $("#navi-papers a").removeClass("navi-active"),
                 $("#navi-books a").addClass("navi-active")
             },
             n = function(e) {
                 e ? ($("#books").fadeOut("fast"), $("#papers").fadeIn("fast"), $("#home").fadeOut("fast")) : ($("#books").hide(), $("#papers").show(), $("#home").hide()),
                 $("#navi-books a").removeClass("navi-active"),
+                $("#navi-current a").removeClass("navi-active"),
                 $("#navi-home a").removeClass("navi-active"),
                 $("#navi-papers a").addClass("navi-active")
             },
@@ -49,6 +53,10 @@
         }),
         $("#navi-papers a").click(function() {
             history.pushState(null, "David Szakonyi", "#papers"),
+            n(!0)
+        }),
+       $("#navi-current a").click(function() {
+            history.pushState(null, "David Szakonyi", "#current"),
             n(!0)
         }),
         window.onpopstate = function(e) {

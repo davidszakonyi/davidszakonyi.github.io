@@ -141,8 +141,13 @@ list-style-position: inside;
 
     }   
     
-    
-         
+.techbook {
+      width: 400px; /* Set the width of the logo */
+  height: auto;
+  margin: 0 auto 20px auto; /* Centers it horizontally */
+  display: block; 
+    }
+             
 .logo-container {
       display: flex;
       align-items: center; /* Align items vertically in the center */
@@ -334,7 +339,7 @@ ul #navi li {
     margin-right:10px;
 }
 
-#newsarchive,#books,#papers,#teaching,#cv,#contact {
+#newsarchive,#books,#papers,#teaching,#cv,#contact,#current {
     display:none;
 }
 
@@ -369,12 +374,25 @@ ul #navi li {
     text-align:justify;
 }
 
+#current p {
+    margin-bottom:22px;
+    text-align:justify;
+}
+
 @media screen and (min-width:1000px) {
     #papers {
         padding-right:250px;
         padding-bottom:50px;
     }
 }
+
+
+#current h3 {
+    font-size:14px;
+    margin:35px, 0, 15px, 0;
+    font-weight:300;
+}
+
 
 #papers h3 {
     font-size:14px;

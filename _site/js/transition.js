@@ -10,6 +10,10 @@ const booksBtn = document.getElementById('navi-books');
 booksBtn.addEventListener('click', switchPage, false);
 booksBtn.myParam = 'books';
 
+const currentBtn = document.getElementById('navi-current');
+currentBtn.addEventListener('click', switchPage, false);
+currentBtn.myParam = 'current';
+
 const pubBtn = document.getElementById('navi-papers');
 pubBtn.addEventListener('click', switchPage, false);
 pubBtn.myParam = 'publication';
@@ -32,6 +36,7 @@ newsArchiveBtn.myParam = 'archive';
 
 const homeDiv = document.getElementById('home');
 const booksDiv = document.getElementById('books');
+const currentDiv = document.getElementById('current');
 const pubDiv = document.getElementById('papers');
 const creativeDiv = document.getElementById('teaching');
 const cvDiv = document.getElementById('cv');
@@ -44,6 +49,8 @@ function switchPage (page) {
         
         homeDiv.style.display = 'block';
         booksDiv.style.display = 'none';
+        currentDiv.style.display = 'none';
+
         pubDiv.style.display = 'none';
         creativeDiv.style.display = 'none';
         cvDiv.style.display = 'none';
@@ -59,6 +66,21 @@ function switchPage (page) {
         booksDiv.style.display = 'block';
         homeDiv.style.display = 'none';
         pubDiv.style.display = 'none';
+        currentDiv.style.display = 'none';
+
+        creativeDiv.style.display = 'none';
+        cvDiv.style.display = 'none';
+        contactDiv.style.display = 'none';
+        newsArchiveDiv.style.display = 'none';
+    }
+    
+    if (page.currentTarget.myParam == 'current') {
+        console.log('current');
+        booksDiv.style.display = 'none';
+        homeDiv.style.display = 'none';
+        pubDiv.style.display = 'none';
+        currentDiv.style.display = 'block';
+
         creativeDiv.style.display = 'none';
         cvDiv.style.display = 'none';
         contactDiv.style.display = 'none';
@@ -70,6 +92,8 @@ function switchPage (page) {
         booksDiv.style.display = 'none';
         homeDiv.style.display = 'none';
         pubDiv.style.display = 'block';
+        currentDiv.style.display = 'none';
+
         creativeDiv.style.display = 'none';
         cvDiv.style.display = 'none';
         contactDiv.style.display = 'none';
@@ -81,6 +105,8 @@ function switchPage (page) {
         booksDiv.style.display = 'none';
         homeDiv.style.display = 'none';
         pubDiv.style.display = 'none';
+        currentDiv.style.display = 'none';
+
         creativeDiv.style.display = 'block';
         cvDiv.style.display = 'none';
         contactDiv.style.display = 'none';
@@ -92,6 +118,8 @@ function switchPage (page) {
         booksDiv.style.display = 'none';
         homeDiv.style.display = 'none';
         pubDiv.style.display = 'none';
+        currentDiv.style.display = 'none';
+
         creativeDiv.style.display = 'none';
         cvDiv.style.display = 'block';
         contactDiv.style.display = 'none';
@@ -103,6 +131,8 @@ function switchPage (page) {
         booksDiv.style.display = 'none';
         homeDiv.style.display = 'none';
         pubDiv.style.display = 'none';
+        currentDiv.style.display = 'none';
+
         creativeDiv.style.display = 'none';
         cvDiv.style.display = 'none';
         contactDiv.style.display = 'block';
