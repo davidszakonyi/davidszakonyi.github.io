@@ -481,3 +481,13 @@ color:#1e1e1e;
     .active .arrow::before {
       content: '\25BC'; /* Unicode character for down arrow */
     }
+
+
+/* Show only one card at a time: home by default */
+.card {
+  display: none;
+}
+
+#home {
+  display: block;
+}

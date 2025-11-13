@@ -1,151 +1,55 @@
-const homeBtn = document.getElementById('navi-home');
-homeBtn.addEventListener('click', switchPage, false);
-homeBtn.myParam = 'home';
+document.addEventListener('DOMContentLoaded', function () {
+  const cards = Array.from(document.querySelectorAll('.card'));
 
-const backBtn = document.getElementById('back');
-backBtn.addEventListener('click', switchPage, false);
-backBtn.myParam = 'home';
+  function showCard(id) {
+    cards.forEach(card => {
+      card.style.display = (card.id === id) ? 'block' : 'none';
+    });
 
-const booksBtn = document.getElementById('navi-books');
-booksBtn.addEventListener('click', switchPage, false);
-booksBtn.myParam = 'books';
-
-const currentBtn = document.getElementById('navi-current');
-currentBtn.addEventListener('click', switchPage, false);
-currentBtn.myParam = 'current';
-
-const pubBtn = document.getElementById('navi-papers');
-pubBtn.addEventListener('click', switchPage, false);
-pubBtn.myParam = 'publication';
-
-const creativeBtn = document.getElementById('navi-teaching');
-creativeBtn.addEventListener('click', switchPage, false);
-creativeBtn.myParam = 'teaching';
-
-const cvBtn = document.getElementById('navi-cv');
-cvBtn.addEventListener('click', switchPage, false);
-cvBtn.myParam = 'cv';
-
-const contactBtn = document.getElementById('navi-contact');
-contactBtn.addEventListener('click', switchPage, false);
-contactBtn.myParam = 'contact';
-
-const newsArchiveBtn = document.getElementById('news-more');
-newsArchiveBtn.addEventListener('click', switchPage, false);
-newsArchiveBtn.myParam = 'archive';
-
-const homeDiv = document.getElementById('home');
-const booksDiv = document.getElementById('books');
-const currentDiv = document.getElementById('current');
-const pubDiv = document.getElementById('papers');
-const creativeDiv = document.getElementById('teaching');
-const cvDiv = document.getElementById('cv');
-const contactDiv = document.getElementById('contact');
-const newsArchiveDiv = document.getElementById('newsarchive')
-
-function switchPage (page) {
-    if (page.currentTarget.myParam == 'home') {
-        console.log('home');
-        
-        homeDiv.style.display = 'block';
-        booksDiv.style.display = 'none';
-        currentDiv.style.display = 'none';
-
-        pubDiv.style.display = 'none';
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-        // this rough logic works -- 
-        // need to add a smooth transition
-        
+    // Update active nav link
+    document.querySelectorAll('#navi li a').forEach(a => a.classList.remove('navi-active'));
+    const navLi = document.getElementById('navi-' + id);
+    if (navLi) {
+      const link = navLi.querySelector('a');
+      if (link) link.classList.add('navi-active');
     }
 
-    if (page.currentTarget.myParam == 'books') {
-        console.log('books');
-        booksDiv.style.display = 'block';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        currentDiv.style.display = 'none';
+    // Update URL hash
+    const hash = (id === 'home') ? '#' : '#' + id;
+    history.pushState(null, document.title, hash);
+  }
 
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-    }
-    
-    if (page.currentTarget.myParam == 'current') {
-        console.log('current');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        currentDiv.style.display = 'block';
+  // Map nav items → card IDs (must match your existing IDs)
+  const navMap = {
+    'navi-home': 'home',
+    'navi-books': 'books',
+    'navi-papers': 'papers',
+    'navi-current': 'current',
+    'navi-teaching': 'teaching',
+    'navi-cv': 'cv',
+    'navi-contact': 'contact'
+  };
 
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-    }
-   
-    if (page.currentTarget.myParam == 'publication') {
-        console.log('pub');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'block';
-        currentDiv.style.display = 'none';
+  // Initial view based on hash (or home if none)
+  const initial = (window.location.hash || '#').replace('#', '') || 'home';
+  showCard(initial);
 
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-    }
+  // Wire up nav clicks
+  Object.entries(navMap).forEach(([navId, cardId]) => {
+    const li = document.getElementById(navId);
+    if (!li) return;
+    const link = li.querySelector('a');
+    if (!link) return;
 
-    if (page.currentTarget.myParam == 'teaching') {
-        console.log('teaching');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        currentDiv.style.display = 'none';
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      showCard(cardId);
+    });
+  });
 
-        creativeDiv.style.display = 'block';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-    }
-
-    if (page.currentTarget.myParam == 'cv') {
-        console.log('cv');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        currentDiv.style.display = 'none';
-
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'block';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'none';
-    }
-
-    if (page.currentTarget.myParam == 'contact') {
-        console.log('contact');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        currentDiv.style.display = 'none';
-
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'block';
-        newsArchiveDiv.style.display = 'none';
-    }
-    if (page.currentTarget.myParam == 'archive') {
-        console.log('contact');
-        booksDiv.style.display = 'none';
-        homeDiv.style.display = 'none';
-        pubDiv.style.display = 'none';
-        creativeDiv.style.display = 'none';
-        cvDiv.style.display = 'none';
-        contactDiv.style.display = 'none';
-        newsArchiveDiv.style.display = 'block';
-    }
-}
+  // Handle back/forward buttons
+  window.addEventListener('popstate', function () {
+    const hash = (window.location.hash || '#').replace('#', '') || 'home';
+    showCard(hash);
+  });
+});
