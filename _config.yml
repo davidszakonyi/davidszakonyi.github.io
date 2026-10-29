@@ -19,15 +19,20 @@
 # in the templates via {{ site.myvariable }}.
 
 title: David Szakonyi
-email: davidszakonyi@gmail.com
+# email intentionally omitted: the address is assembled in js/transition.js to keep it from scrapers
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Associate professor of political science and international affairs at
+  George Washington University. Research on corruption, autocracy,
+  bureaucracy, and money in politics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.davidszakonyi.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dszakonyi
 github_username:  davidszakonyi
+
+# Autocratic Intelligence links (used on /autocratic-intelligence/)
+book:
+  pup_url: "https://press.princeton.edu/books/paperback/9780691297989/autocratic-intelligence"
+  notify_url: "https://share.hsforms.com/1mLBk3MYkSCWC7k4BrTEmHw4q07a?book_title=Autocratic%20Intelligence&isbn=9780691297989&publication_date__us_=2027-06-15&publication_date__uk_=2027-06-15&subjectinterests__c="
 
 # Build settings
 #theme: minima
@@ -53,3 +58,19 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Not published to the live site. ds/ holds student class projects.
+exclude:
+  - ds
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
+  - css/index.styl
+  - css/fonts/*-demo.html
+  - js/headshot.js
+  - js/main.js
+  - js/old-main.js
+  - js/weird_main.js
+  - js/transition_working.js

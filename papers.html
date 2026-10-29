@@ -1,0 +1,38 @@
+---
+layout: default
+permalink: /papers/
+section_id: papers
+title: "Published Papers"
+description: "Published research by David Szakonyi on money in politics, autocracy, bureaucracy, and clientelism."
+---
+
+<main id="main" class="content-area">
+  <section id="papers" class="card">
+    <h2>published papers</h2>
+
+    <h3 class="paper-group">money and politics</h3>
+    <ul class="paper-list">
+      {% for item in site.data.money limit: 20 %}{% include paper-item.html item=item %}{% endfor %}
+    </ul>
+
+    <h3 class="paper-group">autocracy</h3>
+    <ul class="paper-list">
+      {% for item in site.data.autocracy limit: 20 %}{% include paper-item.html item=item %}{% endfor %}
+    </ul>
+
+    <h3 class="paper-group">bureaucracy</h3>
+    <ul class="paper-list">
+      {% for item in site.data.bureaucracy limit: 20 %}{% include paper-item.html item=item %}{% endfor %}
+    </ul>
+
+    <h3 class="paper-group">clientelism</h3>
+    <ul class="paper-list">
+      {% for item in site.data.clientelism limit: 20 %}{% include paper-item.html item=item %}{% endfor %}
+    </ul>
+
+    <div class="news-more">
+      <a href="https://scholar.google.com/citations?user=2hwOdF4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">more via google scholar</a><br>
+      <a href="/assets/Szakonyi_CV.pdf" target="_blank" rel="noopener noreferrer">or via my cv.</a>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,18 @@
+<li class="paper">
+  <div class="p-info">
+    <span class="p-title"><a href="/assets/papers/{{ include.item.link }}" target="_blank" rel="noopener noreferrer">{{ include.item.title }}.</a></span>
+    <span class="p-source"><em>{{ include.item.venue }},</em></span>
+    {% if include.item.volume %}<span class="p-source">{{ include.item.volume }}({{ include.item.issue }}),</span>{% endif %}
+    {% if include.item.pages %}<span class="p-pages">{{ include.item.pages }}. </span>{% endif %}
+    {% if include.item.year %}<span class="p-pages">{{ include.item.year }}. </span>{% endif %}
+    {% if include.item.coauthors %}<span class="p-pages">{{ include.item.coauthors }}</span>{% endif %}
+    {% if include.item.pdf %}<span class="p-source"><a href="/assets/papers/{{ include.item.pdf }}">PDF</a></span>{% endif %}
+    {% if include.item.blog %}<span class="p-source"><a href="{{ include.item.blog }}">Blog</a></span>{% endif %}
+  </div>
+  {% if include.item.abstract %}
+  <div class="p-abstract">
+    <button type="button" class="collapsible" aria-expanded="false" onclick="toggleContent(this)"><span class="arrow"></span>Abstract</button>
+    <div class="content"><p>{{ include.item.abstract }}</p></div>
+  </div>
+  {% endif %}
+</li>

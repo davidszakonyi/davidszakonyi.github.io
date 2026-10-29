@@ -2,24 +2,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
-  <title>David Szakonyi</title>
-  <meta name="description" content="david szakonyi">
-  <meta name="keywords" content="david szakonyi">
-  <meta property="og:url" content="https://www.davidszakonyi.com">
+  {% if page.title %}{% assign full_title = page.title | append: " | David Szakonyi" %}{% else %}{% assign full_title = "David Szakonyi" %}{% endif %}
+  {% assign desc = page.description | default: site.description | strip_newlines | strip %}
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ desc }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="david szakonyi">
-  <meta property="og:title" content="david szakonyi">
-  <meta property="og:description" content="david szakonyi">
+  <meta property="og:site_name" content="David Szakonyi">
+  <meta property="og:title" content="{{ full_title }}">
+  <meta property="og:description" content="{{ desc }}">
+  <meta property="og:image" content="https://www.davidszakonyi.com/assets/logos/new_head_shot2_small.jpg">
   <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
 
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" type="text/css">
-  <link href="../css/fonts/stylesheet.css" rel="stylesheet" type="text/css">
-  <link href="../css/index.css" rel="stylesheet" type="text/css">
-  <link href="../css/alert.css" rel="stylesheet" type="text/css">
+  <link href="/css/index.css?v={{ site.time | date: '%s' }}" rel="stylesheet" type="text/css">
+  <link href="/css/alert.css" rel="stylesheet" type="text/css">
 
-  <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script defer src="../js/transition.js"></script>
-  <script defer src="../js/headshot.js"></script>
+  {% if page.section_id == 'home' %}
+  <script>
+    // Old single-page links like davidszakonyi.com/#books now live on their own pages.
+    (function () {
+      var map = {books: '/books/', papers: '/papers/', current: '/autocratic-intelligence/', teaching: '/teaching/', cv: '/cv/', contact: '/contact/'};
+      var h = window.location.hash.replace('#', '');
+      if (map[h]) window.location.replace(map[h]);
+    })();
+  </script>
+  {% endif %}
+  <script defer src="/js/transition.js"></script>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T6QXQBC3Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-4T6QXQBC3Y');
+  </script>
 </head>

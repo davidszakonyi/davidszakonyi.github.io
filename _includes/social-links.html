@@ -1,0 +1,1 @@
+{% for s in site.data.social %}<a href="{{ s.url }}" target="_blank" rel="noopener me">{{ s.name }}</a>{% if forloop.rindex == 2 %}, and {% elsif forloop.last == false %}, {% endif %}{% endfor %}

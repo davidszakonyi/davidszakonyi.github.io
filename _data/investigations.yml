@@ -1,0 +1,27 @@
+# "Recent media coverage" bullets under the ACDC paragraph on the home page.
+# Newest first. Fields: title (the story's headline), url, outlet, date.
+
+- title  : "Inside the booming market for US midterm election bets"
+  url    : https://www.reuters.com/legal/government/inside-booming-market-us-midterm-election-bets-2026-10-14/
+  outlet : Reuters
+  date   : October 2026
+
+- title  : "Bets on midterm endorsements, rallies and debates raise insider trading concerns"
+  url    : https://www.cnn.com/2026/10/09/politics/midterm-election-prediction-markets
+  outlet : CNN
+  date   : October 2026
+
+- title  : "How much does it cost to move an election prediction market? Not much"
+  url    : https://www.cnbc.com/2026/09/09/prediction-markets-election-kalshi-polymarket.html
+  outlet : CNBC
+  date   : September 2026
+
+- title  : "Half of ‘long shot’ Polymarket bets on military action are successful"
+  url    : https://www.ft.com/content/989d335e-275b-4cdc-b51d-4b29fd8895b0?syn-25a6b1a6=1
+  outlet : Financial Times
+  date   : April 2026
+
+- title  : "COP Co-Opted? How Corruption and Undue Influence Threaten Multilateral Climate Action"
+  url    : https://acdatacollective.org/work/cop-co-opted/
+  outlet : Transparency International and ACDC report
+  date   : October 2024
